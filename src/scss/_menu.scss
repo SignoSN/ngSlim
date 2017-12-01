@@ -1,0 +1,19 @@
+//Menu
+
+#menu{
+	width: 100%;
+	background: #eee;
+	height: 20px;
+	position: fixed;
+
+	a{
+		text-decoration: none;
+		color: #888;
+		display: inline-block;
+		padding: 2px 5px;
+
+		&:hover{
+			color: #58f;
+		}
+	}
+}

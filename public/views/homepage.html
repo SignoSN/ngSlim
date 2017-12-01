@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngSlim">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>ngSlim</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="https://code.angularjs.org/1.6.6/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.6.6/angular-route.min.js"></script>
+
+</head>
+<body>
+	
+	<header id="home-header">
+		<div class="home-header-greeter">
+			<h1>Wellcome to <span style="color: #f91919">ng</span><span style="color: #49a727">Slim</span></h1>
+			<p>Save time and pain!</p>
+		</div>
+	</header>
+
+	<section class="home-section">
+		<p>
+			This is a boilerplate to create a web site with <a href="https://angularjs.org/">AngularJS</a> as fronted and <a href="https://www.slimframework.com/">Slim</a> as backend.
+		</p>
+		<p>
+			it very simple to install and go
+		</p>
+		<p>
+			Configured to work with <strong>SCSS</strong> and <strong>Babeljs</strong>
+		</p>
+	</section>
+
+	<section class="home-section">
+		<h3 style="text-align: center">Working with API</h3>
+		<p>Slim brings the easy way to build Api's and Angular for binding</p>
+		<p>The following data are bring from <a href="/api/foo">Foo api</a></p>
+
+		<div class="foo" ng-repeat="foo in foos">
+			<h4>{{foo.name}}</h4>
+			<strong>Name:</strong> {{foo.name}} <br>
+			<strong>Contact:</strong> <small>{{foo.email}}</small>
+			<p>
+				<strong>Bio:</strong>
+				{{foo.bio}}
+			</p>
+		</div>
+	</section>
+	
+</body>
+</html>
