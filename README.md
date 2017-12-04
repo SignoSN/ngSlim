@@ -3,7 +3,7 @@
 It's a boiler plate for rapid web development
 
 ### Version
-0.1-0
+V0.1.1
 
 ## Requirement
 
