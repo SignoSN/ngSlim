@@ -17,7 +17,7 @@ class Data{
 			$this->db_pass
 		);
 		$this->database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$this->database->setAttribute(PDO::ATTR_DEFAULT_FETCH, PDO::FETCH_OBJ);
+		$this->database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 		return $this->database;
 
 	}
